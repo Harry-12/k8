@@ -1,0 +1,4 @@
+> An init container is the one that starts and executes before other containers in the same Pod. It's meant to perform initialization logic for the main application hosted on the Pod. For example, create the necessary user accounts, perform database migrations, create database schemas and so on.
+
+> Why do we need init containers?
+Because init containers have separate images from app containers, they have some advantages for start-up related code: Init containers can contain utilities or custom code for setup that are not present in an app image. ... By keeping unnecessary tools separate you can limit the attack surface of your app container image.
